@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const userRoute = express.Router();
 
-let User = require('../models/User');
+var User = require('../models/User');
 
 // Get all Users
 userRoute.route('/').get((req, res) => {

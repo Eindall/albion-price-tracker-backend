@@ -1,4 +1,4 @@
-let express = require('express'),
+var express = require('express'),
 path = require('path'),
 mongoose = require('mongoose'),
 cors = require('cors'),
