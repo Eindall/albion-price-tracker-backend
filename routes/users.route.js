@@ -8,7 +8,7 @@ var User = require('../models/User');
 userRoute.route('/').get((req, res) => {
     User.find((error, data) => {
       if (error) {
-            return next(error);
+            return error;
         } else {
             res.json(data);
         }
@@ -19,7 +19,7 @@ userRoute.route('/').get((req, res) => {
 userRoute.route('/read-user/:id').get((req, res) => {
     User.findById(req.params.id, (error, data) => {
         if (error) {
-            return next(error);
+            return error;
         } else {
             res.json(data);
         }
