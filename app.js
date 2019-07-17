@@ -21,7 +21,7 @@ mongoose.connect(dataBaseConfig.db, {
 });
 
 // Setup expressJS port
-const userRoute = require('../backend/routes/users.route');
+const userRoute = require('./routes/users.route');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
